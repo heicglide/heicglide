@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://heicglide.com/sitemap.xml
