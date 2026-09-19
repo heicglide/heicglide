@@ -49,6 +49,7 @@
       row.output = outputName(row.file.name);
       row.status = 'JPG ready to download';
       row.busy = false;
+      if (window.trackHeicGlideEvent) window.trackHeicGlideEvent('conversion_complete', { output_format: 'jpg' });
     } catch (error) {
       row.status = 'Could not convert this file. Try again.';
       row.error = true; row.busy = false;
