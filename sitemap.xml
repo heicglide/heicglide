@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://heicglide.com/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://heicglide.com/heic-to-jpg-windows-11.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://heicglide.com/heic-to-jpg-iphone.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://heicglide.com/faq.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://heicglide.com/privacy.html</loc><priority>0.5</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://heicglide.com/</loc><lastmod>2026-09-19</lastmod><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://heicglide.com/guides.html</loc><lastmod>2026-09-19</lastmod><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://heicglide.com/heic-to-jpg-iphone.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://heicglide.com/heic-to-jpg-windows-11.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://heicglide.com/heic-to-jpg-mac.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://heicglide.com/heic-vs-jpg.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://heicglide.com/convert-heic-to-jpg-without-losing-quality.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://heicglide.com/heic-to-jpg-email-upload.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://heicglide.com/why-iphone-photos-are-heic.html</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://heicglide.com/faq.html</loc><lastmod>2026-09-19</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://heicglide.com/about.html</loc><lastmod>2026-09-19</lastmod><priority>0.6</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://heicglide.com/contact.html</loc><lastmod>2026-09-19</lastmod><priority>0.5</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://heicglide.com/privacy.html</loc><lastmod>2026-09-19</lastmod><priority>0.5</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://heicglide.com/terms.html</loc><lastmod>2026-09-19</lastmod><priority>0.4</priority><changefreq>yearly</changefreq></url>
 </urlset>
