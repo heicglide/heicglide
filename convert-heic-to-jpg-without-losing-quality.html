@@ -1,37 +1,164 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Convert HEIC to JPG Without Losing Quality | HEIC Glide</title>
-  <meta name="description" content="Learn how to minimize quality loss when converting HEIC to JPG. Preserve resolution, avoid repeated compression, and keep the original.">
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://heicglide.com/convert-heic-to-jpg-without-losing-quality.html">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://heicglide.com/convert-heic-to-jpg-without-losing-quality.html">
-  <meta property="og:title" content="Convert HEIC to JPG Without Losing Quality | HEIC Glide">
-  <meta property="og:description" content="Learn how to minimize quality loss when converting HEIC to JPG. Preserve resolution, avoid repeated compression, and keep the original.">
-  <meta property="og:site_name" content="HEIC Glide">
-  <meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Convert HEIC to JPG Without Losing Quality","description":"Practical tips to minimize visible quality loss during HEIC-to-JPG conversion.","mainEntityOfPage":"https://heicglide.com/convert-heic-to-jpg-without-losing-quality.html","publisher":{"@type":"Organization","name":"HEIC Glide","url":"https://heicglide.com/"}}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can HEIC be converted to JPG with zero quality loss?","acceptedAnswer":{"@type":"Answer","text":"Not exactly. JPEG is lossy, so conversion requires re-encoding. You can minimize visible loss by using a high quality setting and converting only once from the original."}},{"@type":"Question","name":"Does converting an HEIC photo reduce resolution?","acceptedAnswer":{"@type":"Answer","text":"A converter can preserve the original pixel dimensions even though JPEG compression may change fine image detail."}},{"@type":"Question","name":"What should I do with the original HEIC file?","acceptedAnswer":{"@type":"Answer","text":"Keep it as a master copy so you can make new exports later without recompressing an already converted JPG."}}]}</script>
-  <script src="analytics-consent.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Convert HEIC to JPG Without Losing Quality (Settings That Work)</title>
+<meta name="description" content="The settings that keep HEIC to JPG conversions visually lossless: JPEG quality, resolution, colour profile and metadata. Includes when PNG is the better choice.">
+<link rel="canonical" href="https://heicglide.com/convert-heic-to-jpg-without-losing-quality.html">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Convert HEIC to JPG Without Losing Quality (Settings That Work)">
+<meta property="og:description" content="The settings that keep HEIC to JPG conversions visually lossless: JPEG quality, resolution, colour profile and metadata. Includes when PNG is the better choice.">
+<meta property="og:url" content="https://heicglide.com/convert-heic-to-jpg-without-losing-quality.html">
+<meta property="og:site_name" content="HEIC Glide">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#111827;--muted:#4b5563;--line:#e5e7eb;--bg:#fff;--soft:#f8fafc;
+--brand:#0f766e;--brand-dark:#115e59;--brand-soft:#f0fdfa;--warn:#b45309}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header.site{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:20}
+header.site .wrap{display:flex;align-items:center;gap:16px;min-height:58px;flex-wrap:wrap}
+.brand{font-weight:700;font-size:17px;color:var(--ink);text-decoration:none}
+.brand span{color:var(--brand)}
+nav.main{display:flex;gap:14px;flex-wrap:wrap;margin-left:auto}
+nav.main a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
+nav.main a:hover,nav.main a[aria-current="page"]{color:var(--brand)}
+main{padding:26px 0 8px}
+.eyebrow{color:var(--brand);font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin:0 0 6px}
+h1{font-size:31px;line-height:1.2;margin:0 0 10px;letter-spacing:-.02em}
+h2{font-size:23px;line-height:1.3;margin:36px 0 10px}
+h3{font-size:18px;margin:22px 0 6px}
+p{margin:0 0 14px;color:var(--muted)}
+p.lead{font-size:18px;color:var(--ink)}
+ul,ol{color:var(--muted);padding-left:22px;margin:0 0 16px}
+li{margin:6px 0}
+a{color:var(--brand)}
+.answer{border-left:3px solid var(--brand);background:var(--brand-soft);padding:12px 16px;border-radius:0 8px 8px 0;margin:0 0 18px}
+.answer p{margin:0;color:var(--ink)}
+.cta{border:1px solid #99f6e4;background:var(--brand-soft);border-radius:12px;padding:16px 18px;margin:20px 0;text-align:center}
+.cta p{margin:0 0 10px;color:var(--ink);font-weight:600}
+.cta a.btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;
+ padding:11px 20px;border-radius:9px;font-weight:600}
+.cta a.btn:hover{background:var(--brand-dark)}
+.cta .sub{display:block;margin-top:8px;font-size:13px;color:var(--muted);font-weight:400}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0 0 18px}
+.steps>li{counter-increment:s;position:relative;padding:0 0 0 42px;margin:0 0 16px;color:var(--muted)}
+.steps>li:before{content:counter(s);position:absolute;left:0;top:1px;width:28px;height:28px;border-radius:50%;
+ background:var(--brand);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
+.steps>li b{color:var(--ink)}
+table{width:100%;border-collapse:collapse;margin:0 0 16px;font-size:15px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{background:var(--soft);font-size:13px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted)}
+code{background:#f3f4f6;border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:14.5px;
+ font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+pre{background:#111827;color:#f9fafb;border-radius:10px;padding:14px 16px;overflow-x:auto;font-size:14px}
+pre code{background:none;border:0;color:inherit;padding:0}
+.faq{border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:0 0 12px}
+.faq h3{margin:0 0 6px;font-size:16.5px}
+.faq p{margin:0}
+.note{font-size:13.5px;color:var(--muted);background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.warn{font-size:14px;background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:12px 14px;color:#78350f}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 16px;border-radius:10px}
+.tw table{margin:0;min-width:540px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0 4px}
+@media(max-width:560px){.cards{grid-template-columns:1fr}}
+.card{border:1px solid var(--line);border-radius:10px;padding:12px 14px;text-decoration:none;display:block}
+.card:hover{border-color:var(--brand);background:var(--brand-soft)}
+.card b{display:block;color:var(--ink);font-size:15.5px;margin-bottom:2px}
+.card span{color:var(--muted);font-size:13.5px}
+footer.site{border-top:1px solid var(--line);margin-top:42px;padding:24px 0 40px;background:var(--soft)}
+footer.site p{font-size:13.5px;margin:0 0 8px}
+footer.site a{color:var(--muted);text-decoration:none;font-size:13.5px}
+footer.site a:hover{color:var(--brand)}
+.footlinks{display:flex;gap:14px;flex-wrap:wrap}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "HEIC to JPG converter", "item": "https://heicglide.com/"}, {"@type": "ListItem", "position": 2, "name": "Convert HEIC to JPG without losing quality", "item": "https://heicglide.com/convert-heic-to-jpg-without-losing-quality.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can I convert HEIC to JPG without losing quality?", "acceptedAnswer": {"@type": "Answer", "text": "Not losslessly - JPEG is a lossy format. At a quality setting of 90-95, with the resolution unchanged and the colour profile kept, the difference is not visible in normal photos."}}, {"@type": "Question", "name": "Why is the JPG file bigger than the HEIC?", "acceptedAnswer": {"@type": "Answer", "text": "HEIC compresses photos more efficiently at the same visual quality. A high-quality JPG often uses two to three times the storage. That is expected, not a sign that something went wrong."}}, {"@type": "Question", "name": "What is the best JPEG quality setting?", "acceptedAnswer": {"@type": "Answer", "text": "90-95 for photos you might print or edit again, and 80-89 for images that will only be viewed on screen. Above 95 the files grow quickly with no visible benefit."}}, {"@type": "Question", "name": "Does converting to JPG lose the photo's location and date?", "acceptedAnswer": {"@type": "Answer", "text": "Not with macOS built-in tools or ImageMagick, which carry EXIF data into the JPG. Some browser converters strip metadata, so check one file if the date or location matters."}}, {"@type": "Question", "name": "Why does my converted photo look washed out?", "acceptedAnswer": {"@type": "Answer", "text": "The colour profile was dropped. iPhone photos are usually captured in Display P3, and if the JPG has no profile, software assumes sRGB and the colours shift. Re-convert with a tool that preserves the profile, such as Preview or sips."}}, {"@type": "Question", "name": "Is PNG better than JPG for iPhone photos?", "acceptedAnswer": {"@type": "Answer", "text": "For photographs, no: PNG files would be several times larger with no visible quality advantage. PNG wins for screenshots, text, graphics and anything needing transparency."}}, {"@type": "Question", "name": "Can converting increase image detail?", "acceptedAnswer": {"@type": "Answer", "text": "No. A new format cannot restore detail that is not present in the source file. It can only preserve what is there or lose some of it."}}]}</script>
 </head>
 <body>
-  <header class="site-header"><div class="container header-inner"><a class="brand" href="/" aria-label="HEIC Glide home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M8 5.5h10.2L25 12.3V26a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V7.5a2 2 0 0 1 2-2Z" fill="currentColor" opacity=".13"/><path d="M18 5.5v6.2a1.6 1.6 0 0 0 1.6 1.6H25" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M10 23.5h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><span>HEIC<span class="brand-accent">Glide</span></span></a><nav class="nav" aria-label="Main navigation"><a href="/#converter">Converter</a><a href="guides.html">Guides</a><a href="faq.html">FAQ</a></nav></div></header>
-  <main class="page-main"><div class="container narrow">
-    <div class="page-hero"><p class="eyebrow"><span class="eyebrow-dot"></span> Quality guide</p><h1>Convert HEIC to JPG without noticeable quality loss</h1><p>Use the original photo, choose high-quality output, and avoid repeated JPEG recompression.</p></div>
-    <article class="article"><div class="notice"><strong>Honest answer:</strong> HEIC-to-JPG conversion is not mathematically lossless because JPEG uses lossy compression. The goal is to minimize visible quality loss.</div>
-<h2>Start with the original HEIC file</h2><p>Use the file directly from your phone or photo library, not a screenshot or a JPG that has already been shared through a messaging app. Every extra export can remove detail.</p>
-<h2>Use a high JPEG quality setting</h2><p>HEIC Glide uses a high-quality JPEG output suitable for everyday photos. Higher JPEG quality normally preserves more detail, but it also creates a larger file.</p>
-<h2>Avoid repeated conversions</h2><p>Convert once from the original HEIC file, then share copies of that JPG. Opening and resaving the JPG repeatedly can add compression artifacts over time.</p>
-<h2>Keep resolution and compression separate</h2><p>Resolution is the number of pixels in the image. Compression controls how those pixels are stored. A JPG can keep the same pixel dimensions while still losing a small amount of fine detail through compression.</p>
-<div class="tip-grid"><div><strong>Best-quality workflow</strong><span>Original HEIC → one high-quality JPG export</span></div><div><strong>Avoid</strong><span>Screenshot → shared copy → repeated JPG saves</span></div></div>
-<p><a class="primary-button" href="/#converter">Convert with high-quality output</a></p>
-<h2>Check the result before deleting anything</h2><p>Open the JPG at full size and check faces, text, edges, gradients, and low-light areas. Keep the original HEIC even when the JPG looks good.</p>
-<h2>Frequently asked questions</h2><h3>Can conversion increase image detail?</h3><p>No. A new format cannot restore detail that is not present in the source file.</p><h3>Why is the JPG larger?</h3><p>HEIC often compresses photos more efficiently. A high-quality JPG may therefore use more storage.</p><h2>Keep exploring</h2><div class="related-grid"><a href="heic-to-jpg-mac.html"><strong>Convert on Mac</strong><span>Preview and browser methods →</span></a><a href="heic-vs-jpg.html"><strong>HEIC vs JPG</strong><span>Compare quality and compatibility →</span></a><a href="convert-heic-to-jpg-without-losing-quality.html"><strong>Protect image quality</strong><span>Practical conversion tips →</span></a><a href="guides.html"><strong>All guides</strong><span>Browse the HEIC library →</span></a></div></article>
-  </div></main>
-  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="/"><span>HEIC<span class="brand-accent">Glide</span></span></a><p>Simple photo conversion, with privacy in mind.</p><nav aria-label="Footer navigation"><a href="guides.html">Guides</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></nav></div></footer>
+<header class="site"><div class="wrap"><a class="brand" href="/">HEIC <span>Glide</span></a><nav class="main" aria-label="Main"><a href="/">Converter</a><a href="heic-to-jpg-mac.html">Mac</a><a href="heic-to-jpg-windows-11.html">Windows</a><a href="heic-to-jpg-iphone.html">iPhone</a><a href="guides.html">Guides</a><a href="faq.html">FAQ</a></nav></div></header>
+<main class="wrap">
+
+<p class="eyebrow">Quality guide</p>
+<h1>Convert HEIC to JPG without noticeable quality loss</h1>
+<p class="lead">What actually happens to your photo in the conversion, which settings to use, and when JPG is the wrong target format.</p>
+
+<div class="answer"><p><b>Honest answer:</b> HEIC to JPG cannot be mathematically lossless, because JPEG is a lossy format. What you can do is make the loss invisible: start from the original HEIC, export once at a high quality setting (90&ndash;95), keep the resolution unchanged, and keep the colour profile intact.</p></div>
+
+<div class="cta"><p>Convert your HEIC photos to JPG now</p><a class="btn" href="/">Open the HEIC to JPG converter</a><span class="sub">Free, no signup. Processing happens in your browser.</span></div>
+
+<h2>The four things that decide quality</h2>
+<div class="tw"><table>
+  <thead><tr><th>Factor</th><th>What it controls</th><th>What to do</th></tr></thead>
+  <tbody>
+    <tr><td>Source file</td><td>How much detail exists before you start</td><td>Convert the original HEIC, never a screenshot or a photo already re-shared through an app</td></tr>
+    <tr><td>Quality setting</td><td>How aggressively JPEG discards fine detail</td><td>90&ndash;95 is the practical sweet spot; above 95 files grow fast for no visible gain</td></tr>
+    <tr><td>Resolution</td><td>Pixel dimensions</td><td>Keep it unchanged. Never "resize while converting" unless you need a smaller file</td></tr>
+    <tr><td>Colour profile</td><td>How colours are interpreted</td><td>Keep the embedded profile (iPhone photos are usually Display&nbsp;P3). A dropped profile is the most common cause of "washed out" conversions</td></tr>
+  </tbody>
+</table></div>
+
+<h2>Start with the original HEIC file</h2>
+<p>Every extra export removes detail before your conversion even starts. A photo that has been through a messaging app, resized by an email client, or captured as a screenshot is already a lower-quality source. Use the file straight from the camera roll or the photo library.</p>
+
+<h2>Use a high JPEG quality setting</h2>
+<p>JPEG quality is a 1&ndash;100 scale that trades file size for detail:</p>
+<div class="tw"><table>
+  <thead><tr><th>JPEG quality</th><th>Typical use</th><th>Result</th></tr></thead>
+  <tbody>
+    <tr><td>95&ndash;100</td><td>Archival, printing</td><td>Largest files, negligible visible gain over 95</td></tr>
+    <tr><td>90&ndash;95</td><td>Photos you may print or edit again</td><td>No visible loss at normal viewing sizes &mdash; the usual choice</td></tr>
+    <tr><td>80&ndash;89</td><td>Web, email, social uploads</td><td>Smaller files, fine for screen use</td></tr>
+    <tr><td>Below 75</td><td>Thumbnails, quick previews</td><td>Visible blocking in gradients, skies and low light</td></tr>
+  </tbody>
+</table></div>
+<p>In Preview the Quality slider is relative rather than numbered; for <code>sips</code> use <code>-s formatOptions 90</code>, and for ImageMagick use <code>-quality 90</code>.</p>
+
+<h2>Convert once, then share copies</h2>
+<p>The most common way people damage photo quality is not the first conversion &mdash; it is the fifth. Each open-and-save cycle recompresses the file and adds artifacts. The workflow that avoids it:</p>
+<div class="tw"><table>
+  <thead><tr><th>Good workflow</th><th>Avoid</th></tr></thead>
+  <tbody>
+    <tr><td>Original HEIC &rarr; one high-quality JPG export &rarr; share copies of that JPG</td><td>Screenshot &rarr; shared copy &rarr; repeated JPG saves</td></tr>
+  </tbody>
+</table></div>
+
+<h2>Resolution and compression are different things</h2>
+<p>Resolution is the number of pixels in the image. Compression controls how those pixels are stored. A JPG can keep exactly the same pixel dimensions as the HEIC and still lose a small amount of fine detail through compression. That is why "the photo is the same size on screen but the file looks softer" is normal, and why resizing down during conversion is a much bigger loss than the compression itself.</p>
+
+<h2>When JPG is the wrong format</h2>
+<ul>
+  <li><b>Screenshots, diagrams, logos and text-heavy images.</b> JPEG is poor at sharp edges and flat colour, and can add visible ringing around text. PNG is lossless and usually smaller for these images.</li>
+  <li><b>Images you will edit repeatedly.</b> Convert to PNG, TIFF or keep the HEIC and export a JPG only for the final delivery.</li>
+  <li><b>Transparency.</b> JPEG has none. If the image needs a transparent background, use PNG.</li>
+  <li><b>Print at large sizes.</b> Keep the HEIC (or a PNG/TIFF export) as the master and use the JPG for sharing.</li>
+</ul>
+
+<h2>Check the result before deleting anything</h2>
+<ol class="steps">
+  <li><b>Open the JPG at 100% zoom</b> and compare it with the original side by side.</li>
+  <li><b>Look at the difficult areas:</b> faces, text, sharp edges, smooth gradients such as skies, and shadows in low-light photos.</li>
+  <li><b>Check the colours,</b> especially reds and skin tones, if the conversion was done by a tool that may drop the colour profile.</li>
+  <li><b>Check the metadata</b> if the date, camera details or location matter to you.</li>
+  <li><b>Keep the original HEIC.</b> Always. It is your master copy and the only way to re-export later.</li>
+</ol>
+
+<h2>Frequently asked questions</h2>
+<div class="faq"><h3>Can I convert HEIC to JPG without losing quality?</h3><p>Not losslessly &mdash; JPEG is a lossy format. At a quality setting of 90&ndash;95, with the resolution unchanged and the colour profile kept, the difference is not visible in normal photos.</p></div>
+<div class="faq"><h3>Why is the JPG file bigger than the HEIC?</h3><p>HEIC compresses photos more efficiently at the same visual quality. A high-quality JPG often uses two to three times the storage. That is expected, not a sign that something went wrong.</p></div>
+<div class="faq"><h3>What is the best JPEG quality setting?</h3><p>90&ndash;95 for photos you might print or edit again, and 80&ndash;89 for images that will only be viewed on screen. Above 95 the files grow quickly with no visible benefit.</p></div>
+<div class="faq"><h3>Does converting to JPG lose the photo's location and date?</h3><p>Not with macOS built-in tools or ImageMagick, which carry EXIF data into the JPG. Some browser converters strip metadata, so check one file if the date or location matters.</p></div>
+<div class="faq"><h3>Why does my converted photo look washed out?</h3><p>The colour profile was dropped. iPhone photos are usually captured in Display&nbsp;P3, and if the JPG has no profile, software assumes sRGB and the colours shift. Re-convert with a tool that preserves the profile, such as Preview or <code>sips</code>.</p></div>
+<div class="faq"><h3>Is PNG better than JPG for iPhone photos?</h3><p>For photographs, no: PNG files would be several times larger with no visible quality advantage. PNG wins for screenshots, text, graphics and anything needing transparency.</p></div>
+<div class="faq"><h3>Can converting increase image detail?</h3><p>No. A new format cannot restore detail that is not present in the source file. It can only preserve what is there or lose some of it.</p></div>
+
+<h2>Other HEIC guides</h2><div class="cards"><a class="card" href="heic-to-jpg-mac.html"><b>HEIC to JPG on Mac</b><span>how to convert HEIC to JPG on a Mac</span></a><a class="card" href="heic-to-jpg-windows-11.html"><b>HEIC to JPG on Windows 11</b><span>convert HEIC photos on a Windows PC</span></a><a class="card" href="heic-to-jpg-iphone.html"><b>HEIC to JPG on iPhone</b><span>convert on iPhone and iPad</span></a><a class="card" href="why-iphone-photos-are-heic.html"><b>Why iPhone photos are HEIC</b><span>HEIF, storage and compatibility</span></a></div>
+</main>
+<footer class="site"><div class="wrap"><div class="footlinks"><a href="heic-to-jpg-mac.html">HEIC to JPG on Mac</a><a href="heic-to-jpg-windows-11.html">HEIC to JPG on Windows 11</a><a href="heic-to-jpg-iphone.html">HEIC to JPG on iPhone</a><a href="why-iphone-photos-are-heic.html">Why iPhone photos are HEIC</a><a href="faq.html">HEIC questions</a><a href="guides.html">All guides</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><p style="margin-top:14px">HEIC Glide converts HEIC and HEIF photos to JPG in your browser. Your photos are processed on your device and are not uploaded for conversion.</p><p>File conversion is provided as-is. Always keep your original HEIC files.</p></div></footer>
 </body>
 </html>

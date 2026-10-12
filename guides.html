@@ -1,28 +1,139 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HEIC Guides: iPhone, Mac, Windows & JPG Tips | HEIC Glide</title>
-  <meta name="description" content="Practical HEIC guides for iPhone, Mac, Windows, email uploads, image quality, and choosing between HEIC and JPG.">
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://heicglide.com/guides.html">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://heicglide.com/guides.html">
-  <meta property="og:title" content="HEIC Guides: iPhone, Mac, Windows & JPG Tips | HEIC Glide">
-  <meta property="og:description" content="Practical HEIC guides for iPhone, Mac, Windows, email uploads, image quality, and choosing between HEIC and JPG.">
-  <meta property="og:site_name" content="HEIC Glide">
-  <meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"HEIC Guides","url":"https://heicglide.com/guides.html","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://heicglide.com/heic-to-jpg-iphone.html","name":"iPhone"},{"@type":"ListItem","position":2,"url":"https://heicglide.com/heic-to-jpg-windows-11.html","name":"Windows 11"},{"@type":"ListItem","position":3,"url":"https://heicglide.com/heic-to-jpg-mac.html","name":"Mac"},{"@type":"ListItem","position":4,"url":"https://heicglide.com/heic-vs-jpg.html","name":"HEIC vs JPG"},{"@type":"ListItem","position":5,"url":"https://heicglide.com/convert-heic-to-jpg-without-losing-quality.html","name":"Image quality"},{"@type":"ListItem","position":6,"url":"https://heicglide.com/heic-to-jpg-email-upload.html","name":"Email and forms"},{"@type":"ListItem","position":7,"url":"https://heicglide.com/why-iphone-photos-are-heic.html","name":"Why iPhone uses HEIC"}]}}</script>
-  <script src="analytics-consent.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HEIC to JPG Guides and Tools — Every Device, Every Method</title>
+<meta name="description" content="Directory of HEIC Glide guides: convert HEIC to JPG on Mac, Windows 11, iPhone and iPad, keep quality, and understand why iPhone photos are HEIC.">
+<link rel="canonical" href="https://heicglide.com/guides.html">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HEIC to JPG Guides and Tools — Every Device, Every Method">
+<meta property="og:description" content="Directory of HEIC Glide guides: convert HEIC to JPG on Mac, Windows 11, iPhone and iPad, keep quality, and understand why iPhone photos are HEIC.">
+<meta property="og:url" content="https://heicglide.com/guides.html">
+<meta property="og:site_name" content="HEIC Glide">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#111827;--muted:#4b5563;--line:#e5e7eb;--bg:#fff;--soft:#f8fafc;
+--brand:#0f766e;--brand-dark:#115e59;--brand-soft:#f0fdfa;--warn:#b45309}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header.site{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:20}
+header.site .wrap{display:flex;align-items:center;gap:16px;min-height:58px;flex-wrap:wrap}
+.brand{font-weight:700;font-size:17px;color:var(--ink);text-decoration:none}
+.brand span{color:var(--brand)}
+nav.main{display:flex;gap:14px;flex-wrap:wrap;margin-left:auto}
+nav.main a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
+nav.main a:hover,nav.main a[aria-current="page"]{color:var(--brand)}
+main{padding:26px 0 8px}
+.eyebrow{color:var(--brand);font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin:0 0 6px}
+h1{font-size:31px;line-height:1.2;margin:0 0 10px;letter-spacing:-.02em}
+h2{font-size:23px;line-height:1.3;margin:36px 0 10px}
+h3{font-size:18px;margin:22px 0 6px}
+p{margin:0 0 14px;color:var(--muted)}
+p.lead{font-size:18px;color:var(--ink)}
+ul,ol{color:var(--muted);padding-left:22px;margin:0 0 16px}
+li{margin:6px 0}
+a{color:var(--brand)}
+.answer{border-left:3px solid var(--brand);background:var(--brand-soft);padding:12px 16px;border-radius:0 8px 8px 0;margin:0 0 18px}
+.answer p{margin:0;color:var(--ink)}
+.cta{border:1px solid #99f6e4;background:var(--brand-soft);border-radius:12px;padding:16px 18px;margin:20px 0;text-align:center}
+.cta p{margin:0 0 10px;color:var(--ink);font-weight:600}
+.cta a.btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;
+ padding:11px 20px;border-radius:9px;font-weight:600}
+.cta a.btn:hover{background:var(--brand-dark)}
+.cta .sub{display:block;margin-top:8px;font-size:13px;color:var(--muted);font-weight:400}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0 0 18px}
+.steps>li{counter-increment:s;position:relative;padding:0 0 0 42px;margin:0 0 16px;color:var(--muted)}
+.steps>li:before{content:counter(s);position:absolute;left:0;top:1px;width:28px;height:28px;border-radius:50%;
+ background:var(--brand);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
+.steps>li b{color:var(--ink)}
+table{width:100%;border-collapse:collapse;margin:0 0 16px;font-size:15px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{background:var(--soft);font-size:13px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted)}
+code{background:#f3f4f6;border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:14.5px;
+ font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+pre{background:#111827;color:#f9fafb;border-radius:10px;padding:14px 16px;overflow-x:auto;font-size:14px}
+pre code{background:none;border:0;color:inherit;padding:0}
+.faq{border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:0 0 12px}
+.faq h3{margin:0 0 6px;font-size:16.5px}
+.faq p{margin:0}
+.note{font-size:13.5px;color:var(--muted);background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.warn{font-size:14px;background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:12px 14px;color:#78350f}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 16px;border-radius:10px}
+.tw table{margin:0;min-width:540px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0 4px}
+@media(max-width:560px){.cards{grid-template-columns:1fr}}
+.card{border:1px solid var(--line);border-radius:10px;padding:12px 14px;text-decoration:none;display:block}
+.card:hover{border-color:var(--brand);background:var(--brand-soft)}
+.card b{display:block;color:var(--ink);font-size:15.5px;margin-bottom:2px}
+.card span{color:var(--muted);font-size:13.5px}
+footer.site{border-top:1px solid var(--line);margin-top:42px;padding:24px 0 40px;background:var(--soft)}
+footer.site p{font-size:13.5px;margin:0 0 8px}
+footer.site a{color:var(--muted);text-decoration:none;font-size:13.5px}
+footer.site a:hover{color:var(--brand)}
+.footlinks{display:flex;gap:14px;flex-wrap:wrap}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "HEIC to JPG converter", "item": "https://heicglide.com/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://heicglide.com/guides.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "HEIC to JPG guides and tools", "description": "Guides for converting HEIC and HEIF photos to JPG on Mac, Windows, iPhone and iPad."}</script>
 </head>
 <body>
-  <header class="site-header"><div class="container header-inner"><a class="brand" href="/" aria-label="HEIC Glide home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M8 5.5h10.2L25 12.3V26a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V7.5a2 2 0 0 1 2-2Z" fill="currentColor" opacity=".13"/><path d="M18 5.5v6.2a1.6 1.6 0 0 0 1.6 1.6H25" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M10 23.5h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><span>HEIC<span class="brand-accent">Glide</span></span></a><nav class="nav" aria-label="Main navigation"><a href="/#converter">Converter</a><a href="guides.html">Guides</a><a href="faq.html">FAQ</a></nav></div></header>
-  <main class="page-main"><div class="container narrow">
-    <div class="page-hero"><p class="eyebrow"><span class="eyebrow-dot"></span> Resource library</p><h1>HEIC guides for everyday photo problems</h1><p>Clear, practical help for opening, converting, sharing, and understanding HEIC photos.</p></div>
-    <section class="guide-grid" aria-label="HEIC guides"><a class="guide-card" href="heic-to-jpg-iphone.html"><span class="guide-label">Guide</span><strong>iPhone</strong><p>Convert HEIC photos in Safari and find the downloaded JPG.</p><span class="guide-arrow">Read guide →</span></a><a class="guide-card" href="heic-to-jpg-windows-11.html"><span class="guide-label">Guide</span><strong>Windows 11</strong><p>Use HEIC Glide on a PC when apps or forms need JPG.</p><span class="guide-arrow">Read guide →</span></a><a class="guide-card" href="heic-to-jpg-mac.html"><span class="guide-label">Guide</span><strong>Mac</strong><p>Use Preview or a private browser-based workflow.</p><span class="guide-arrow">Read guide →</span></a><a class="guide-card" href="heic-vs-jpg.html"><span class="guide-label">Guide</span><strong>HEIC vs JPG</strong><p>Compare storage efficiency, quality, and compatibility.</p><span class="guide-arrow">Read guide →</span></a><a class="guide-card" href="convert-heic-to-jpg-without-losing-quality.html"><span class="guide-label">Guide</span><strong>Image quality</strong><p>Minimize visible loss and protect the original photo.</p><span class="guide-arrow">Read guide →</span></a><a class="guide-card" href="heic-to-jpg-email-upload.html"><span class="guide-label">Guide</span><strong>Email and forms</strong><p>Fix unsupported-format errors before uploading.</p><span class="guide-arrow">Read guide →</span></a><a class="guide-card" href="why-iphone-photos-are-heic.html"><span class="guide-label">Guide</span><strong>Why iPhone uses HEIC</strong><p>Understand High Efficiency and Most Compatible.</p><span class="guide-arrow">Read guide →</span></a></section><section class="hub-cta"><div><p class="eyebrow">Ready to convert?</p><h2>Create a JPG copy in your browser.</h2><p>Your selected photos are processed locally rather than uploaded to our server for conversion.</p></div><a class="primary-button" href="/#converter">Open the converter</a></section>
-  </div></main>
-  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="/"><span>HEIC<span class="brand-accent">Glide</span></span></a><p>Simple photo conversion, with privacy in mind.</p><nav aria-label="Footer navigation"><a href="guides.html">Guides</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></nav></div></footer>
+<header class="site"><div class="wrap"><a class="brand" href="/">HEIC <span>Glide</span></a><nav class="main" aria-label="Main"><a href="/">Converter</a><a href="heic-to-jpg-mac.html">Mac</a><a href="heic-to-jpg-windows-11.html">Windows</a><a href="heic-to-jpg-iphone.html">iPhone</a><a href="guides.html" aria-current="page">Guides</a><a href="faq.html">FAQ</a></nav></div></header>
+<main class="wrap">
+
+<p class="eyebrow">Guide directory</p>
+<h1>HEIC to JPG guides and tools</h1>
+<p class="lead">Every HEIC Glide guide in one place, plus the free browser converter that does the work in a few seconds.</p>
+
+<div class="answer"><p><b>Start here:</b> if you just need the photo converted, use the <a href="/">HEIC to JPG converter</a>. If a specific device or problem brought you here, pick the matching guide below.</p></div>
+
+<div class="cta"><p>Convert your HEIC photos to JPG now</p><a class="btn" href="/">Open the HEIC to JPG converter</a><span class="sub">Free, no signup. Processing happens in your browser.</span></div>
+
+<h2>Choose by device</h2>
+<div class="cards">
+  <a class="card" href="heic-to-jpg-mac.html"><b>On a Mac</b><span>Preview, Photos, Finder Quick Actions, Shortcuts, Terminal sips &mdash; six methods compared</span></a>
+  <a class="card" href="heic-to-jpg-windows-11.html"><b>On Windows 11</b><span>No-install browser route, the free HEIF extension, PowerToys batch conversion</span></a>
+  <a class="card" href="heic-to-jpg-iphone.html"><b>On iPhone or iPad</b><span>Convert on the phone itself, plus the camera setting that stops future HEIC files</span></a>
+</div>
+
+<h2>Choose by problem</h2>
+<div class="cards">
+  <a class="card" href="convert-heic-to-jpg-without-losing-quality.html"><b>The JPG looks worse than the original</b><span>Quality settings, resolution, colour profile and metadata explained</span></a>
+  <a class="card" href="why-iphone-photos-are-heic.html"><b>Why are my photos HEIC at all?</b><span>HEIF and HEVC explained, and how to switch to Most Compatible</span></a>
+  <a class="card" href="faq.html"><b>Something else is wrong</b><span>Short answers to the most common HEIC questions</span></a>
+</div>
+
+<h2>Which method should you use?</h2>
+<div class="tw"><table>
+  <thead><tr><th>Your situation</th><th>Best method</th><th>Guide</th></tr></thead>
+  <tbody>
+    <tr><td>You just want the file converted now</td><td>Browser converter</td><td><a href="/">HEIC Glide</a></td></tr>
+    <tr><td>You are on a work PC with no install rights</td><td>Browser converter</td><td><a href="heic-to-jpg-windows-11.html">Windows 11</a></td></tr>
+    <tr><td>One or two photos, precise quality control</td><td>Preview export (Mac)</td><td><a href="heic-to-jpg-mac.html">Mac</a></td></tr>
+    <tr><td>A whole folder of photos</td><td>Finder Quick Actions, <code>sips</code>, PowerToys or the browser converter</td><td><a href="heic-to-jpg-mac.html">Mac</a> / <a href="heic-to-jpg-windows-11.html">Windows</a></td></tr>
+    <tr><td>You want future photos to be JPG</td><td>Camera &rarr; Formats &rarr; Most Compatible</td><td><a href="why-iphone-photos-are-heic.html">HEIC explained</a></td></tr>
+    <tr><td>You convert the same way every week</td><td>Shortcuts (Mac or iPhone)</td><td><a href="heic-to-jpg-mac.html">Mac</a> / <a href="heic-to-jpg-iphone.html">iPhone</a></td></tr>
+  </tbody>
+</table></div>
+
+<h2>The five things that matter in every conversion</h2>
+<ol>
+  <li><b>Use the original file.</b> Screenshots and re-shared copies have already lost detail.</li>
+  <li><b>Convert once.</b> Repeated save cycles add compression artifacts.</li>
+  <li><b>Keep the resolution.</b> Shrinking the image is a bigger loss than the compression itself.</li>
+  <li><b>Keep the colour profile.</b> Dropped profiles are the usual cause of washed-out JPGs.</li>
+  <li><b>Keep the HEIC.</b> It is your master copy and the only way to export again later.</li>
+</ol>
+
+<h2>About HEIC Glide</h2>
+<p>HEIC Glide is a free browser-based converter for HEIC and HEIF photos. Files are processed on your device rather than uploaded for conversion, there is no signup, and it works on Windows, macOS, iPhone, iPad and Android browsers. The guides on this site are written to be accurate about what each method actually does &mdash; including where it loses quality, metadata or the Live Photo.</p>
+<p>Questions, corrections or a guide you would like added? <a href="contact.html">Contact us</a> or read the <a href="faq.html">HEIC FAQ</a>.</p>
+
+<h2>Other HEIC guides</h2><div class="cards"><a class="card" href="heic-to-jpg-mac.html"><b>HEIC to JPG on Mac</b><span>how to convert HEIC to JPG on a Mac</span></a><a class="card" href="heic-to-jpg-windows-11.html"><b>HEIC to JPG on Windows 11</b><span>convert HEIC photos on a Windows PC</span></a><a class="card" href="heic-to-jpg-iphone.html"><b>HEIC to JPG on iPhone</b><span>convert on iPhone and iPad</span></a><a class="card" href="convert-heic-to-jpg-without-losing-quality.html"><b>Convert without losing quality</b><span>keep detail and resolution</span></a><a class="card" href="why-iphone-photos-are-heic.html"><b>Why iPhone photos are HEIC</b><span>HEIF, storage and compatibility</span></a></div>
+</main>
+<footer class="site"><div class="wrap"><div class="footlinks"><a href="heic-to-jpg-mac.html">HEIC to JPG on Mac</a><a href="heic-to-jpg-windows-11.html">HEIC to JPG on Windows 11</a><a href="heic-to-jpg-iphone.html">HEIC to JPG on iPhone</a><a href="convert-heic-to-jpg-without-losing-quality.html">Convert without losing quality</a><a href="why-iphone-photos-are-heic.html">Why iPhone photos are HEIC</a><a href="faq.html">HEIC questions</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><p style="margin-top:14px">HEIC Glide converts HEIC and HEIF photos to JPG in your browser. Your photos are processed on your device and are not uploaded for conversion.</p><p>File conversion is provided as-is. Always keep your original HEIC files.</p></div></footer>
 </body>
 </html>

@@ -1,36 +1,170 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Why Are iPhone Photos HEIC? | HEIC Glide</title>
-  <meta name="description" content="Learn why iPhones save photos as HEIC, how the format saves space, and how to switch future photos to JPG with Most Compatible.">
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://heicglide.com/why-iphone-photos-are-heic.html">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://heicglide.com/why-iphone-photos-are-heic.html">
-  <meta property="og:title" content="Why Are iPhone Photos HEIC? | HEIC Glide">
-  <meta property="og:description" content="Learn why iPhones save photos as HEIC, how the format saves space, and how to switch future photos to JPG with Most Compatible.">
-  <meta property="og:site_name" content="HEIC Glide">
-  <meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Why Are iPhone Photos HEIC?","description":"An explanation of HEIC on iPhone and how to change future photo formats.","mainEntityOfPage":"https://heicglide.com/why-iphone-photos-are-heic.html","publisher":{"@type":"Organization","name":"HEIC Glide","url":"https://heicglide.com/"}}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why did Apple choose HEIC for iPhone photos?","acceptedAnswer":{"@type":"Answer","text":"HEIC offers more efficient compression than JPEG, helping reduce storage use while preserving strong visual quality."}},{"@type":"Question","name":"Can I make future iPhone photos use JPG?","acceptedAnswer":{"@type":"Answer","text":"On supported devices, go to Settings, Camera, Formats, then choose Most Compatible. New photos will use JPEG, while existing HEIC files remain unchanged."}},{"@type":"Question","name":"Should I turn off High Efficiency?","acceptedAnswer":{"@type":"Answer","text":"Use Most Compatible when universal compatibility is the priority. Keep High Efficiency when storage efficiency and Apple features matter more."}}]}</script>
-  <script src="analytics-consent.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Why Are iPhone Photos HEIC? HEIF Explained (And How to Change It)</title>
+<meta name="description" content="Why iPhones save photos as HEIC, what HEIF and HEVC are, which apps and systems can open HEIC, and how to switch the camera to Most Compatible.">
+<link rel="canonical" href="https://heicglide.com/why-iphone-photos-are-heic.html">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Why Are iPhone Photos HEIC? HEIF Explained (And How to Change It)">
+<meta property="og:description" content="Why iPhones save photos as HEIC, what HEIF and HEVC are, which apps and systems can open HEIC, and how to switch the camera to Most Compatible.">
+<meta property="og:url" content="https://heicglide.com/why-iphone-photos-are-heic.html">
+<meta property="og:site_name" content="HEIC Glide">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#111827;--muted:#4b5563;--line:#e5e7eb;--bg:#fff;--soft:#f8fafc;
+--brand:#0f766e;--brand-dark:#115e59;--brand-soft:#f0fdfa;--warn:#b45309}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header.site{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:20}
+header.site .wrap{display:flex;align-items:center;gap:16px;min-height:58px;flex-wrap:wrap}
+.brand{font-weight:700;font-size:17px;color:var(--ink);text-decoration:none}
+.brand span{color:var(--brand)}
+nav.main{display:flex;gap:14px;flex-wrap:wrap;margin-left:auto}
+nav.main a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
+nav.main a:hover,nav.main a[aria-current="page"]{color:var(--brand)}
+main{padding:26px 0 8px}
+.eyebrow{color:var(--brand);font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin:0 0 6px}
+h1{font-size:31px;line-height:1.2;margin:0 0 10px;letter-spacing:-.02em}
+h2{font-size:23px;line-height:1.3;margin:36px 0 10px}
+h3{font-size:18px;margin:22px 0 6px}
+p{margin:0 0 14px;color:var(--muted)}
+p.lead{font-size:18px;color:var(--ink)}
+ul,ol{color:var(--muted);padding-left:22px;margin:0 0 16px}
+li{margin:6px 0}
+a{color:var(--brand)}
+.answer{border-left:3px solid var(--brand);background:var(--brand-soft);padding:12px 16px;border-radius:0 8px 8px 0;margin:0 0 18px}
+.answer p{margin:0;color:var(--ink)}
+.cta{border:1px solid #99f6e4;background:var(--brand-soft);border-radius:12px;padding:16px 18px;margin:20px 0;text-align:center}
+.cta p{margin:0 0 10px;color:var(--ink);font-weight:600}
+.cta a.btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;
+ padding:11px 20px;border-radius:9px;font-weight:600}
+.cta a.btn:hover{background:var(--brand-dark)}
+.cta .sub{display:block;margin-top:8px;font-size:13px;color:var(--muted);font-weight:400}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0 0 18px}
+.steps>li{counter-increment:s;position:relative;padding:0 0 0 42px;margin:0 0 16px;color:var(--muted)}
+.steps>li:before{content:counter(s);position:absolute;left:0;top:1px;width:28px;height:28px;border-radius:50%;
+ background:var(--brand);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
+.steps>li b{color:var(--ink)}
+table{width:100%;border-collapse:collapse;margin:0 0 16px;font-size:15px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{background:var(--soft);font-size:13px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted)}
+code{background:#f3f4f6;border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:14.5px;
+ font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+pre{background:#111827;color:#f9fafb;border-radius:10px;padding:14px 16px;overflow-x:auto;font-size:14px}
+pre code{background:none;border:0;color:inherit;padding:0}
+.faq{border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:0 0 12px}
+.faq h3{margin:0 0 6px;font-size:16.5px}
+.faq p{margin:0}
+.note{font-size:13.5px;color:var(--muted);background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.warn{font-size:14px;background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:12px 14px;color:#78350f}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 16px;border-radius:10px}
+.tw table{margin:0;min-width:540px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0 4px}
+@media(max-width:560px){.cards{grid-template-columns:1fr}}
+.card{border:1px solid var(--line);border-radius:10px;padding:12px 14px;text-decoration:none;display:block}
+.card:hover{border-color:var(--brand);background:var(--brand-soft)}
+.card b{display:block;color:var(--ink);font-size:15.5px;margin-bottom:2px}
+.card span{color:var(--muted);font-size:13.5px}
+footer.site{border-top:1px solid var(--line);margin-top:42px;padding:24px 0 40px;background:var(--soft)}
+footer.site p{font-size:13.5px;margin:0 0 8px}
+footer.site a{color:var(--muted);text-decoration:none;font-size:13.5px}
+footer.site a:hover{color:var(--brand)}
+.footlinks{display:flex;gap:14px;flex-wrap:wrap}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "HEIC to JPG converter", "item": "https://heicglide.com/"}, {"@type": "ListItem", "position": 2, "name": "Why iPhone photos are HEIC", "item": "https://heicglide.com/why-iphone-photos-are-heic.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does HEIC stand for?", "acceptedAnswer": {"@type": "Answer", "text": "High Efficiency Image Container - a HEIF file containing images compressed with the HEVC codec. Apple uses the .heic extension; some cameras and Android phones write .heif."}}, {"@type": "Question", "name": "Is HEIC better than JPG?", "acceptedAnswer": {"@type": "Answer", "text": "Technically yes for storage efficiency: about half the file size at similar visible quality, plus support for features such as multiple images and depth data. JPG is better for compatibility, which matters more when you need to share a photo."}}, {"@type": "Question", "name": "Should I switch my iPhone to Most Compatible?", "acceptedAnswer": {"@type": "Answer", "text": "Only if you regularly send photos to Windows users, upload them to forms that reject HEIC, or use older editing software. Otherwise High Efficiency saves a lot of storage, and converting the occasional photo takes seconds."}}, {"@type": "Question", "name": "Will Apple stop using HEIC?", "acceptedAnswer": {"@type": "Answer", "text": "There is no sign of that. Apple continues to use HEIF/HEVC and the wider industry is moving toward newer efficient formats rather than back to JPEG. Compatibility work will keep falling to conversion tools."}}, {"@type": "Question", "name": "Does iCloud convert HEIC to JPG?", "acceptedAnswer": {"@type": "Answer", "text": "Not as a rule - iCloud keeps the original HEIC. Some download and import flows deliver a JPEG copy, which is why the same photo can arrive in different formats depending on how you transferred it. Check the file extension if the format matters."}}, {"@type": "Question", "name": "Is HEIC the same as HEIF?", "acceptedAnswer": {"@type": "Answer", "text": "HEIF is the container; HEIC is the HEVC-based variant Apple uses. Both extensions convert the same way, and both tools on this site accept either."}}, {"@type": "Question", "name": "Why is my photo .HEIC on the phone but .JPG after emailing it?", "acceptedAnswer": {"@type": "Answer", "text": "Mail and most messaging apps re-encode photos when sending them, which is why the recipient gets a JPG. That copy is compressed and usually loses metadata, so it is not a substitute for converting the original."}}]}</script>
 </head>
 <body>
-  <header class="site-header"><div class="container header-inner"><a class="brand" href="/" aria-label="HEIC Glide home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M8 5.5h10.2L25 12.3V26a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V7.5a2 2 0 0 1 2-2Z" fill="currentColor" opacity=".13"/><path d="M18 5.5v6.2a1.6 1.6 0 0 0 1.6 1.6H25" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M10 23.5h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><span>HEIC<span class="brand-accent">Glide</span></span></a><nav class="nav" aria-label="Main navigation"><a href="/#converter">Converter</a><a href="guides.html">Guides</a><a href="faq.html">FAQ</a></nav></div></header>
-  <main class="page-main"><div class="container narrow">
-    <div class="page-hero"><p class="eyebrow"><span class="eyebrow-dot"></span> iPhone formats</p><h1>Why are iPhone photos HEIC?</h1><p>Understand the storage benefits, compatibility tradeoffs, and the Most Compatible camera setting.</p></div>
-    <article class="article"><div class="notice"><strong>Short answer:</strong> iPhones use HEIC because it can store high-quality photos more efficiently than traditional JPG files.</div>
-<h2>HEIC saves storage space</h2><p>Apple supports HEIF photos because the format offers better compression than JPEG. That can reduce storage use on a device and in a photo library while maintaining similar visual quality.</p>
-<h2>Why compatibility problems still happen</h2><p>HEIC support is common on modern Apple devices, but some older computers, websites, business systems, and upload forms still expect JPG. That is why a photo can look normal on an iPhone but fail somewhere else.</p>
-<h2>How to make future iPhone photos use JPG</h2><ol><li>Open <strong>Settings</strong>.</li><li>Tap <strong>Camera</strong>.</li><li>Tap <strong>Formats</strong>.</li><li>Select <strong>Most Compatible</strong>.</li></ol><p>This changes future captures. It does not convert photos already stored as HEIC.</p>
-<p class="source-note">Apple explains HEIF, compatibility, and the Most Compatible setting in <a href="https://support.apple.com/en-us/116944" rel="noopener">Using HEIF or HEVC media on Apple devices</a>.</p>
-<h2>High Efficiency or Most Compatible?</h2><div class="comparison-wrap"><table class="comparison-table"><thead><tr><th>Setting</th><th>Choose it when</th></tr></thead><tbody><tr><td>High Efficiency</td><td>You want efficient storage and mainly use current Apple or compatible software</td></tr><tr><td>Most Compatible</td><td>You frequently send photos to older systems or strict upload forms</td></tr></tbody></table></div>
-<p><a class="primary-button" href="/#converter">Convert an existing HEIC photo</a></p>
-<h2>Frequently asked questions</h2><h3>Does Most Compatible convert old photos?</h3><p>No. It affects new photos and videos only.</p><h3>Is HEIC a bad format?</h3><p>No. It is efficient and modern. JPG is simply more universally compatible.</p><h2>Keep exploring</h2><div class="related-grid"><a href="heic-to-jpg-mac.html"><strong>Convert on Mac</strong><span>Preview and browser methods →</span></a><a href="heic-vs-jpg.html"><strong>HEIC vs JPG</strong><span>Compare quality and compatibility →</span></a><a href="convert-heic-to-jpg-without-losing-quality.html"><strong>Protect image quality</strong><span>Practical conversion tips →</span></a><a href="guides.html"><strong>All guides</strong><span>Browse the HEIC library →</span></a></div></article>
-  </div></main>
-  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="/"><span>HEIC<span class="brand-accent">Glide</span></span></a><p>Simple photo conversion, with privacy in mind.</p><nav aria-label="Footer navigation"><a href="guides.html">Guides</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></nav></div></footer>
+<header class="site"><div class="wrap"><a class="brand" href="/">HEIC <span>Glide</span></a><nav class="main" aria-label="Main"><a href="/">Converter</a><a href="heic-to-jpg-mac.html">Mac</a><a href="heic-to-jpg-windows-11.html">Windows</a><a href="heic-to-jpg-iphone.html">iPhone</a><a href="guides.html">Guides</a><a href="faq.html">FAQ</a></nav></div></header>
+<main class="wrap">
+
+<p class="eyebrow">Explainer</p>
+<h1>Why are iPhone photos HEIC?</h1>
+<p class="lead">What HEIF and HEIC actually are, why Apple switched, and why the format causes problems the moment a photo leaves the Apple ecosystem.</p>
+
+<div class="answer"><p><b>Short answer:</b> iPhones save photos as HEIC because HEIF stores high-quality images in roughly half the space of JPEG. The trade-off is compatibility: Windows PCs, web forms and older software often expect JPG. You can change the setting for future photos, or <a href="/">convert existing ones</a>.</p></div>
+
+<div class="cta"><p>Convert your HEIC photos to JPG now</p><a class="btn" href="/">Open the HEIC to JPG converter</a><span class="sub">Free, no signup. Processing happens in your browser.</span></div>
+
+<h2>What HEIC actually is</h2>
+<ul>
+  <li><b>HEIF</b> is the container format &mdash; High Efficiency Image File Format, based on the ISO BMFF standard that MP4 also uses.</li>
+  <li><b>HEIC</b> is the variant Apple uses: HEIF containing images compressed with the <b>HEVC</b> codec (the same compression family used for 4K video).</li>
+  <li><b>JPG/JPEG</b> is the older, universally supported format using DCT compression from 1992.</li>
+</ul>
+<p>Because HEIF is a container rather than a single image format, one HEIC file can also hold several images &mdash; which is how Apple stores parts of a Live Photo and depth information from Portrait mode.</p>
+
+<h2>Why Apple switched to HEIC</h2>
+<p>Apple made HEIC the default when iOS 11 shipped in 2017. The reason is storage efficiency: at similar visible quality, HEIC files are typically <b>about half the size</b> of a JPEG. For a 64&nbsp;GB iPhone, that difference is the space for thousands of extra photos, and it also reduces iCloud storage and upload time.</p>
+<div class="tw"><table>
+  <thead><tr><th>Format</th><th>Typical size (12&nbsp;MP photo)</th><th>Compatibility</th></tr></thead>
+  <tbody>
+    <tr><td>HEIC</td><td class="num">~1&ndash;2&nbsp;MB</td><td>Apple devices, macOS, Windows with the HEIF extension, recent Android, Safari</td></tr>
+    <tr><td>JPEG</td><td class="num">~2&ndash;5&nbsp;MB</td><td>Effectively everything</td></tr>
+  </tbody>
+</table></div>
+<p>Sizes vary with scene complexity and compression, but the direction is consistent: HEIC is smaller at the same visual quality.</p>
+
+<h2>Why compatibility problems still happen</h2>
+<p>HEIC support is not universal, and the gaps are exactly where people need to send photos:</p>
+<div class="tw"><table>
+  <thead><tr><th>Where</th><th>HEIC support</th></tr></thead>
+  <tbody>
+    <tr><td>iPhone, iPad, Mac (Finder, Preview, Photos)</td><td>Native</td></tr>
+    <tr><td>Safari</td><td>Yes</td></tr>
+    <tr><td>Chrome, Firefox, Edge on desktop</td><td>No &mdash; this is why browser-based HEIC converters exist</td></tr>
+    <tr><td>Windows 10 and 11</td><td>Only with the free HEIF Image Extensions from the Microsoft Store</td></tr>
+    <tr><td>Older Windows software, web upload forms, some CRM and HR systems</td><td>Frequently no &mdash; JPG required</td></tr>
+    <tr><td>Android</td><td>Recent versions read HEIF; older ones do not</td></tr>
+    <tr><td>Social platforms and messaging apps</td><td>Usually accept and re-encode automatically</td></tr>
+  </tbody>
+</table></div>
+<p>This is why a photo can look perfect on the iPhone it came from and still fail on a work laptop, an online application form or an older photo editor.</p>
+
+<h2>High Efficiency or Most Compatible?</h2>
+<p>On the iPhone: <b>Settings &rarr; Camera &rarr; Formats</b>.</p>
+<div class="tw"><table>
+  <thead><tr><th>Setting</th><th>Choose it when</th><th>Trade-off</th></tr></thead>
+  <tbody>
+    <tr><td><b>High Efficiency</b> (default)</td><td>You stay in the Apple ecosystem and want the most photos per gigabyte</td><td>Photos need converting before many non-Apple uses</td></tr>
+    <tr><td><b>Most Compatible</b></td><td>You often send photos to Windows users, upload them to forms, or use older editing software</td><td>New photos use noticeably more storage</td></tr>
+  </tbody>
+</table></div>
+<p class="warn"><b>Important:</b> this setting only changes <i>new</i> photos. Everything already in your library stays HEIC until you convert it.</p>
+
+<h2>How to convert the HEIC photos you already have</h2>
+<div class="cards">
+  <a class="card" href="heic-to-jpg-mac.html"><b>On a Mac</b><span>Preview, Photos, Quick Actions, Shortcuts, Terminal</span></a>
+  <a class="card" href="heic-to-jpg-windows-11.html"><b>On Windows 11</b><span>browser converter, Photos app, PowerToys</span></a>
+  <a class="card" href="heic-to-jpg-iphone.html"><b>On iPhone or iPad</b><span>Safari converter, sharing settings, Shortcuts</span></a>
+  <a class="card" href="convert-heic-to-jpg-without-losing-quality.html"><b>Without losing quality</b><span>settings, colour profile and metadata</span></a>
+</div>
+
+<h2>Does converting break anything?</h2>
+<ul>
+  <li><b>Live Photos:</b> a JPG export keeps the still image but not the motion. Keep the original HEIC if you want the Live Photo intact.</li>
+  <li><b>Portrait depth data:</b> the depth map is not carried into a standard JPG, so background blur can no longer be re-adjusted after conversion.</li>
+  <li><b>Metadata:</b> date, camera details and location survive in most desktop converters but are often stripped by browser tools and messaging apps.</li>
+  <li><b>Storage:</b> the JPG is usually larger than the HEIC it came from, so converting an entire library needs free space.</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+<div class="faq"><h3>What does HEIC stand for?</h3><p>High Efficiency Image Container &mdash; a HEIF file containing images compressed with the HEVC codec. Apple uses the .heic extension; some cameras and Android phones write .heif.</p></div>
+<div class="faq"><h3>Is HEIC better than JPG?</h3><p>Technically yes for storage efficiency: about half the file size at similar visible quality, plus support for features such as multiple images and depth data. JPG is better for compatibility, which matters more when you need to share a photo.</p></div>
+<div class="faq"><h3>Should I switch my iPhone to Most Compatible?</h3><p>Only if you regularly send photos to Windows users, upload them to forms that reject HEIC, or use older editing software. Otherwise High Efficiency saves a lot of storage, and converting the occasional photo takes seconds.</p></div>
+<div class="faq"><h3>Will Apple stop using HEIC?</h3><p>There is no sign of that. Apple continues to use HEIF/HEVC and the wider industry is moving toward newer efficient formats rather than back to JPEG. Compatibility work will keep falling to conversion tools.</p></div>
+<div class="faq"><h3>Does iCloud convert HEIC to JPG?</h3><p>Not as a rule &mdash; iCloud keeps the original HEIC. Some download and import flows deliver a JPEG copy, which is why the same photo can arrive in different formats depending on how you transferred it. Check the file extension if the format matters.</p></div>
+<div class="faq"><h3>Is HEIC the same as HEIF?</h3><p>HEIF is the container; HEIC is the HEVC-based variant Apple uses. Both extensions convert the same way, and both tools on this site accept either.</p></div>
+<div class="faq"><h3>Why is my photo .HEIC on the phone but .JPG after emailing it?</h3><p>Mail and most messaging apps re-encode photos when sending them, which is why the recipient gets a JPG. That copy is compressed and usually loses metadata, so it is not a substitute for converting the original.</p></div>
+
+<h2>Other HEIC guides</h2><div class="cards"><a class="card" href="heic-to-jpg-mac.html"><b>HEIC to JPG on Mac</b><span>how to convert HEIC to JPG on a Mac</span></a><a class="card" href="heic-to-jpg-windows-11.html"><b>HEIC to JPG on Windows 11</b><span>convert HEIC photos on a Windows PC</span></a><a class="card" href="heic-to-jpg-iphone.html"><b>HEIC to JPG on iPhone</b><span>convert on iPhone and iPad</span></a><a class="card" href="convert-heic-to-jpg-without-losing-quality.html"><b>Convert without losing quality</b><span>keep detail and resolution</span></a></div>
+</main>
+<footer class="site"><div class="wrap"><div class="footlinks"><a href="heic-to-jpg-mac.html">HEIC to JPG on Mac</a><a href="heic-to-jpg-windows-11.html">HEIC to JPG on Windows 11</a><a href="heic-to-jpg-iphone.html">HEIC to JPG on iPhone</a><a href="convert-heic-to-jpg-without-losing-quality.html">Convert without losing quality</a><a href="faq.html">HEIC questions</a><a href="guides.html">All guides</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><p style="margin-top:14px">HEIC Glide converts HEIC and HEIF photos to JPG in your browser. Your photos are processed on your device and are not uploaded for conversion.</p><p>File conversion is provided as-is. Always keep your original HEIC files.</p></div></footer>
 </body>
 </html>
